@@ -1,0 +1,47 @@
+{
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8001,
+    "debug": false
+  },
+  "database": {
+    "path": "papers.db",
+    "backup_enabled": true,
+    "backup_interval_days": 7
+  },
+  "download": {
+    "directory": "papers",
+    "max_file_size_mb": 100,
+    "cleanup_old_files_days": 30,
+    "download_timeout_seconds": 30
+  },
+  "search": {
+    "default_max_results": 10,
+    "arxiv_delay_seconds": 3,
+    "pubmed_delay_seconds": 1
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "paper_mcp.log",
+    "max_size_mb": 10,
+    "backup_count": 5
+  },
+  "sources": {
+    "arxiv": {
+      "enabled": true,
+      "categories": [
+        "cs.AI",
+        "cs.LG", 
+        "cs.CV",
+        "cs.NE",
+        "cs.CL",
+        "cs.IR",
+        "stat.ML"
+      ]
+    },
+    "pubmed": {
+      "enabled": true,
+      "api_key": null
+    }
+  }
+} 

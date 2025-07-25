@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+requests
+beautifulsoup4
+arxiv
+PyPDF2
+python-dotenv
+aiofiles 
+schedule
